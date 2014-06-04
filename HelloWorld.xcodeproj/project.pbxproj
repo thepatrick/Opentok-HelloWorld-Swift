@@ -7,11 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CDC39155193E9E790006FFCB /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CDC39154193E9E790006FFCB /* libsqlite3.dylib */; };
+		CDC39157193E9E970006FFCB /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDC39156193E9E970006FFCB /* CoreTelephony.framework */; };
+		CDC39159193E9EA20006FFCB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDC39158193E9EA20006FFCB /* SystemConfiguration.framework */; };
+		CDC3915B193E9EA90006FFCB /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDC3915A193E9EA90006FFCB /* OpenGLES.framework */; };
+		CDC3915D193E9EB00006FFCB /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDC3915C193E9EB00006FFCB /* CoreVideo.framework */; };
+		CDC3915F193E9EEC0006FFCB /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDC3915E193E9EEC0006FFCB /* CoreMedia.framework */; };
+		CDC39161193E9EF20006FFCB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDC39160193E9EF20006FFCB /* CoreGraphics.framework */; };
+		CDC39163193E9EF70006FFCB /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDC39162193E9EF70006FFCB /* AudioToolbox.framework */; };
+		CDC39165193E9EFB0006FFCB /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDC39164193E9EFB0006FFCB /* AVFoundation.framework */; };
+		CDC39167193E9F010006FFCB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDC39166193E9F010006FFCB /* QuartzCore.framework */; };
+		CDC39169193E9F070006FFCB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDC39168193E9F070006FFCB /* UIKit.framework */; };
+		CDC3916B193E9F0B0006FFCB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDC3916A193E9F0B0006FFCB /* Foundation.framework */; };
+		CDC3916D193E9F210006FFCB /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CDC3916C193E9F210006FFCB /* libstdc++.6.0.9.dylib */; };
+		CDC3916F193E9F260006FFCB /* libpthread.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CDC3916E193E9F260006FFCB /* libpthread.dylib */; };
+		CDC39171193E9F2B0006FFCB /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CDC39170193E9F2B0006FFCB /* libxml2.dylib */; };
 		CDC904D0193E3BAF00E878A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC904CF193E3BAF00E878A8 /* AppDelegate.swift */; };
 		CDC904D2193E3BAF00E878A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC904D1193E3BAF00E878A8 /* ViewController.swift */; };
 		CDC904D5193E3BAF00E878A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDC904D3193E3BAF00E878A8 /* Main.storyboard */; };
 		CDC904D7193E3BAF00E878A8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDC904D6193E3BAF00E878A8 /* Images.xcassets */; };
 		CDC904E3193E3BAF00E878A8 /* HelloWorldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC904E2193E3BAF00E878A8 /* HelloWorldTests.swift */; };
+		CDC904ED193E3BD300E878A8 /* OpenTok.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDC904EC193E3BD300E878A8 /* OpenTok.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,6 +41,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CDC39154193E9E790006FFCB /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		CDC39156193E9E970006FFCB /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		CDC39158193E9EA20006FFCB /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		CDC3915A193E9EA90006FFCB /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		CDC3915C193E9EB00006FFCB /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		CDC3915E193E9EEC0006FFCB /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		CDC39160193E9EF20006FFCB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CDC39162193E9EF70006FFCB /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		CDC39164193E9EFB0006FFCB /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		CDC39166193E9F010006FFCB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		CDC39168193E9F070006FFCB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CDC3916A193E9F0B0006FFCB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CDC3916C193E9F210006FFCB /* libstdc++.6.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.0.9.dylib"; path = "usr/lib/libstdc++.6.0.9.dylib"; sourceTree = SDKROOT; };
+		CDC3916E193E9F260006FFCB /* libpthread.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpthread.dylib; path = usr/lib/libpthread.dylib; sourceTree = SDKROOT; };
+		CDC39170193E9F2B0006FFCB /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		CDC904CA193E3BAF00E878A8 /* HelloWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDC904CE193E3BAF00E878A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDC904CF193E3BAF00E878A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -34,6 +65,8 @@
 		CDC904DC193E3BAF00E878A8 /* HelloWorldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloWorldTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDC904E1193E3BAF00E878A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDC904E2193E3BAF00E878A8 /* HelloWorldTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWorldTests.swift; sourceTree = "<group>"; };
+		CDC904EC193E3BD300E878A8 /* OpenTok.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OpenTok.framework; sourceTree = "<group>"; };
+		CDC904EE193E3C0000E878A8 /* HelloWorld-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HelloWorld-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +74,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDC39171193E9F2B0006FFCB /* libxml2.dylib in Frameworks */,
+				CDC3916F193E9F260006FFCB /* libpthread.dylib in Frameworks */,
+				CDC3916D193E9F210006FFCB /* libstdc++.6.0.9.dylib in Frameworks */,
+				CDC3916B193E9F0B0006FFCB /* Foundation.framework in Frameworks */,
+				CDC39169193E9F070006FFCB /* UIKit.framework in Frameworks */,
+				CDC39167193E9F010006FFCB /* QuartzCore.framework in Frameworks */,
+				CDC39165193E9EFB0006FFCB /* AVFoundation.framework in Frameworks */,
+				CDC39163193E9EF70006FFCB /* AudioToolbox.framework in Frameworks */,
+				CDC39161193E9EF20006FFCB /* CoreGraphics.framework in Frameworks */,
+				CDC3915F193E9EEC0006FFCB /* CoreMedia.framework in Frameworks */,
+				CDC3915D193E9EB00006FFCB /* CoreVideo.framework in Frameworks */,
+				CDC3915B193E9EA90006FFCB /* OpenGLES.framework in Frameworks */,
+				CDC39159193E9EA20006FFCB /* SystemConfiguration.framework in Frameworks */,
+				CDC39157193E9E970006FFCB /* CoreTelephony.framework in Frameworks */,
+				CDC39155193E9E790006FFCB /* libsqlite3.dylib in Frameworks */,
+				CDC904ED193E3BD300E878A8 /* OpenTok.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,9 +103,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CDC39172193ED8D20006FFCB /* Platform Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CDC39170193E9F2B0006FFCB /* libxml2.dylib */,
+				CDC3916E193E9F260006FFCB /* libpthread.dylib */,
+				CDC3916C193E9F210006FFCB /* libstdc++.6.0.9.dylib */,
+				CDC3916A193E9F0B0006FFCB /* Foundation.framework */,
+				CDC39168193E9F070006FFCB /* UIKit.framework */,
+				CDC39166193E9F010006FFCB /* QuartzCore.framework */,
+				CDC39164193E9EFB0006FFCB /* AVFoundation.framework */,
+				CDC39162193E9EF70006FFCB /* AudioToolbox.framework */,
+				CDC39160193E9EF20006FFCB /* CoreGraphics.framework */,
+				CDC3915E193E9EEC0006FFCB /* CoreMedia.framework */,
+				CDC3915C193E9EB00006FFCB /* CoreVideo.framework */,
+				CDC3915A193E9EA90006FFCB /* OpenGLES.framework */,
+				CDC39158193E9EA20006FFCB /* SystemConfiguration.framework */,
+				CDC39156193E9E970006FFCB /* CoreTelephony.framework */,
+				CDC39154193E9E790006FFCB /* libsqlite3.dylib */,
+			);
+			name = "Platform Frameworks";
+			sourceTree = "<group>";
+		};
 		CDC904C1193E3BAF00E878A8 = {
 			isa = PBXGroup;
 			children = (
+				CDC39172193ED8D20006FFCB /* Platform Frameworks */,
 				CDC904CC193E3BAF00E878A8 /* HelloWorld */,
 				CDC904DF193E3BAF00E878A8 /* HelloWorldTests */,
 				CDC904CB193E3BAF00E878A8 /* Products */,
@@ -75,6 +147,7 @@
 		CDC904CC193E3BAF00E878A8 /* HelloWorld */ = {
 			isa = PBXGroup;
 			children = (
+				CDC904EC193E3BD300E878A8 /* OpenTok.framework */,
 				CDC904CF193E3BAF00E878A8 /* AppDelegate.swift */,
 				CDC904D1193E3BAF00E878A8 /* ViewController.swift */,
 				CDC904D3193E3BAF00E878A8 /* Main.storyboard */,
@@ -87,6 +160,7 @@
 		CDC904CD193E3BAF00E878A8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CDC904EE193E3C0000E878A8 /* HelloWorld-Bridging-Header.h */,
 				CDC904CE193E3BAF00E878A8 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -325,22 +399,41 @@
 		CDC904E7193E3BAF00E878A8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = armv7;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HelloWorld",
+				);
 				INFOPLIST_FILE = HelloWorld/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HelloWorld-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VALID_ARCHS = armv7;
 			};
 			name = Debug;
 		};
 		CDC904E8193E3BAF00E878A8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = armv7;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HelloWorld",
+				);
 				INFOPLIST_FILE = HelloWorld/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HelloWorld-Bridging-Header.h";
+				VALID_ARCHS = armv7;
 			};
 			name = Release;
 		};
@@ -399,6 +492,7 @@
 				CDC904E8193E3BAF00E878A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CDC904E9193E3BAF00E878A8 /* Build configuration list for PBXNativeTarget "HelloWorldTests" */ = {
 			isa = XCConfigurationList;
@@ -407,6 +501,7 @@
 				CDC904EB193E3BAF00E878A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
