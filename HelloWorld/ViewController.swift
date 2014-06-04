@@ -62,7 +62,6 @@ class ViewController: UIViewController, OTSessionDelegate, OTSubscriberKitDelega
         session?.connectWithToken(Token, error: &err)
         if err != nil {
             showAlert(err.description)
-            
         }
     }
     
@@ -210,7 +209,6 @@ class ViewController: UIViewController, OTSessionDelegate, OTSubscriberKitDelega
             let al = UIAlertView(title: "OTError", message: message, delegate: nil, cancelButtonTitle: "OK")
         }
     }
-    
     
 }
 
