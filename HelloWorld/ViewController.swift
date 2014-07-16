@@ -206,6 +206,5 @@ class ViewController: UIViewController, OTSessionDelegate, OTSubscriberKitDelega
         }
     }
     
-    
 }
 
