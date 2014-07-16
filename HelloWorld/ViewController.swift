@@ -44,13 +44,7 @@ class ViewController: UIViewController, OTSessionDelegate, OTSubscriberKitDelega
     override func prefersStatusBarHidden() -> Bool {
         return true
     }
-    
-    
-    override func shouldAutorotateToInterfaceOrientation(toInterfaceOrientation: UIInterfaceOrientation) -> Bool {
-        return !(UIDevice.currentDevice().userInterfaceIdiom == .Phone &&
-            UIInterfaceOrientationIsLandscape(toInterfaceOrientation))
-    }
-    
+      
     // MARK: - OpenTok Methods
 
     /**
@@ -58,11 +52,12 @@ class ViewController: UIViewController, OTSessionDelegate, OTSubscriberKitDelega
      * expect a delegate method to call us back with the results of this action.
      */
     func doConnect() {
-        var err : OTError?
-        session?.connectWithToken(Token, error: &err)
-        if err != nil {
-            showAlert(err.description)
-            
+        if let session = self.session {
+            var maybeError : OTError?
+            session.connectWithToken(Token, error: &maybeError)
+            if let error = maybeError {
+                showAlert(error.localizedDescription)
+            }
         }
     }
     
@@ -74,13 +69,13 @@ class ViewController: UIViewController, OTSessionDelegate, OTSubscriberKitDelega
     func doPublish() {
         publisher = OTPublisher(delegate: self)
         
-        var error : OTError?
-        session?.publish(publisher, error: &error)
-        if error != nil {
-            showAlert(error.description)
+        var maybeError : OTError?
+        session?.publish(publisher, error: &maybeError)
+        if let error = maybeError as? OTError {
+            showAlert(error.localizedDescription)
         }
         
-        view.addSubview(publisher?.view)
+        view.addSubview(publisher!.view)
         publisher!.view.frame = CGRect(x: 0.0, y: 0, width: videoWidth, height: videoHeight)
     }
 
@@ -91,12 +86,14 @@ class ViewController: UIViewController, OTSessionDelegate, OTSubscriberKitDelega
      * add the subscriber only after it has connected and begins receiving data.
      */
     func doSubscribe(stream : OTStream) {
-        subscriber = OTSubscriber(stream: stream, delegate: self)
+        if let session = self.session {
+            subscriber = OTSubscriber(stream: stream, delegate: self)
 
-        var error : OTError?
-        session?.subscribe(subscriber, error: &error)
-        if error != nil {
-            showAlert(error.description)
+            var maybeError : OTError?
+            session.subscribe(subscriber, error: &maybeError)
+            if let error = maybeError {
+                showAlert(error.localizedDescription)
+            }
         }
     }
     
@@ -104,18 +101,16 @@ class ViewController: UIViewController, OTSessionDelegate, OTSubscriberKitDelega
      * Cleans the subscriber from the view hierarchy, if any.
      */
     func doUnsubscribe() {
-        if subscriber != nil {
-            return
+        if let subscriber = self.subscriber {
+            var maybeError : OTError?
+            session?.unsubscribe(subscriber, error: &maybeError)
+            if let error = maybeError {
+                showAlert(error.localizedDescription)
+            }
+            
+            subscriber.view.removeFromSuperview()
+            self.subscriber = nil
         }
-        
-        var error : OTError?
-        session?.unsubscribe(subscriber, error: &error)
-        if error != nil {
-            showAlert(error.description)
-        }
-        
-        subscriber?.view.removeFromSuperview()
-        subscriber = nil
     }
     
     // MARK: - OTSession delegate callbacks
