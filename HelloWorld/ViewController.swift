@@ -71,7 +71,8 @@ class ViewController: UIViewController, OTSessionDelegate, OTSubscriberKitDelega
         
         var maybeError : OTError?
         session?.publish(publisher, error: &maybeError)
-        if let error = maybeError as? OTError {
+        
+        if let error = maybeError {
             showAlert(error.localizedDescription)
         }
         
