@@ -8,7 +8,7 @@ $ git clone git@github.com:thepatrick/Opentok-HelloWorld-Swift.git
 $ cd Opentok-HelloWorld-Swift
 $ curl -L -O http://tokbox.com/downloads/opentok-ios-sdk-2.2
 $ tar xzvf opentok-ios-sdk-2.2 OpenTok-iOS-2.2.1/OpenTok.framework
-$ mv OpenTok-iOS-2.2.0-beta.3/OpenTok.framework HelloWorld/OpenTok.framework
+$ mv OpenTok-iOS-2.2.1/OpenTok.framework HelloWorld/OpenTok.framework
 ```
 
 Then open `HelloWorld.xcodeproj` and run on your device.
