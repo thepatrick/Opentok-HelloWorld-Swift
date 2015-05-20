@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD99C5E51B0C3A3F003D4FED /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD99C5E41B0C3A3F003D4FED /* GLKit.framework */; };
+		CD99C5E71B0C3A46003D4FED /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD99C5E61B0C3A46003D4FED /* VideoToolbox.framework */; };
 		CDC39155193E9E790006FFCB /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CDC39154193E9E790006FFCB /* libsqlite3.dylib */; };
 		CDC39157193E9E970006FFCB /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDC39156193E9E970006FFCB /* CoreTelephony.framework */; };
 		CDC39159193E9EA20006FFCB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDC39158193E9EA20006FFCB /* SystemConfiguration.framework */; };
@@ -41,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CD99C5E41B0C3A3F003D4FED /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		CD99C5E61B0C3A46003D4FED /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
 		CDC39154193E9E790006FFCB /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		CDC39156193E9E970006FFCB /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		CDC39158193E9EA20006FFCB /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -75,6 +79,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD99C5E71B0C3A46003D4FED /* VideoToolbox.framework in Frameworks */,
+				CD99C5E51B0C3A3F003D4FED /* GLKit.framework in Frameworks */,
 				CDF416561A89A85D002B5CEF /* libc++.dylib in Frameworks */,
 				CDC39171193E9F2B0006FFCB /* libxml2.dylib in Frameworks */,
 				CDC3916F193E9F260006FFCB /* libpthread.dylib in Frameworks */,
@@ -130,6 +136,8 @@
 		CDC904C1193E3BAF00E878A8 = {
 			isa = PBXGroup;
 			children = (
+				CD99C5E61B0C3A46003D4FED /* VideoToolbox.framework */,
+				CD99C5E41B0C3A3F003D4FED /* GLKit.framework */,
 				CDC39172193ED8D20006FFCB /* Platform Frameworks */,
 				CDC904CC193E3BAF00E878A8 /* HelloWorld */,
 				CDC904DF193E3BAF00E878A8 /* HelloWorldTests */,

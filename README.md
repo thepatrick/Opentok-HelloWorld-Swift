@@ -6,9 +6,9 @@ To get started download the iOS SDK, and place it in `HelloWorld/Opentok.framewo
 ```bash
 $ git clone git@github.com:thepatrick/Opentok-HelloWorld-Swift.git
 $ cd Opentok-HelloWorld-Swift
-$ curl -L -O https://tokbox.com/downloads/opentok-ios-sdk-2.4.0
-$ tar xzvf opentok-ios-sdk-2.4.0 OpenTok-iOS-2.4.0/OpenTok.framework
-$ mv OpenTok-iOS-2.4.0/OpenTok.framework HelloWorld/OpenTok.framework
+$ curl -L -O https://tokbox.com/downloads/opentok-ios-sdk-2.5.0
+$ tar xzvf opentok-ios-sdk-2.5.0 OpenTok-iOS-2.5.0/OpenTok.framework
+$ mv OpenTok-iOS-2.5.0/OpenTok.framework HelloWorld/OpenTok.framework
 ```
 
 Then open `HelloWorld.xcodeproj` and run on your device.
