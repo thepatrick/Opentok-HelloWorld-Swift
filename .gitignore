@@ -1,2 +1,4 @@
 *.xcuserdatad
 HelloWorld/OpenTok.framework
+Pods
+
